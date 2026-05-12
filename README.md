@@ -1,11 +1,11 @@
-# mkdocs-markdown-in-template-plugin
+# vexy-mkdocs-markdown-in-template
 
 MkDocs plugin that allows to use Markdown in your theme’s Jinja2 templates
 
 ## Installation
 
 ```bash
-python3 -m pip install git+https://github.com/twardoch/mkdocs-markdown-in-template-plugin
+pip install vexy-mkdocs-markdown-in-template
 ```
 
 ## Configuration

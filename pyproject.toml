@@ -1,0 +1,76 @@
+# this_file: pyproject.toml
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vexy-mkdocs-markdown-in-template"
+dynamic = ["version"]
+description = "A MkDocs plugin that lets you use Markdown inside the theme's Jinja2 template files."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    {name = "Adam Twardoch", email = "adam+github@twardoch.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: MkDocs",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+]
+keywords = ["mkdocs", "jinja", "markdown", "theme", "template"]
+dependencies = [
+    "mkdocs>=1.5.0",
+    "Jinja2>=3.0.3",
+    "Markdown>=3.3.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template"
+Repository = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template"
+Issues = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template/issues"
+Changelog = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template/blob/main/CHANGELOG.md"
+
+[project.entry-points."mkdocs.plugins"]
+markdown-in-template = "mkdocs_markdown_in_template_plugin.plugin:MarkdownInTemplatePlugin"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "mkdocs_markdown_in_template_plugin/__version__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mkdocs_markdown_in_template_plugin"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/mkdocs_markdown_in_template_plugin",
+    "/README.md",
+    "/CHANGELOG.md",
+    "/LICENSE",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

@@ -130,3 +130,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# hatch-vcs generated version file
+mkdocs_markdown_in_template_plugin/__version__.py
