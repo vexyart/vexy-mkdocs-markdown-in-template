@@ -39,6 +39,8 @@ dev = [
     "pytest>=8.0",
     "pytest-cov>=4.1",
     "ruff>=0.6",
+    "mypy>=1.10",
+    "types-Markdown>=3.6",
 ]
 
 [project.urls]
@@ -74,3 +76,12 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
 ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[tool.mypy]
+python_version = "3.12"
+files = ["mkdocs_markdown_in_template_plugin"]
+ignore_missing_imports = true
