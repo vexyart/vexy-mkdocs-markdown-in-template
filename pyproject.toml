@@ -19,7 +19,6 @@ classifiers = [
     "Framework :: MkDocs",
     "Intended Audience :: Developers",
     "Intended Audience :: Information Technology",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.12",
@@ -44,6 +43,7 @@ dev = [
 ]
 
 [project.urls]
+Documentation = "https://vexy.dev/vexy-mkdocs-markdown-in-template/"
 Homepage = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template"
 Repository = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template"
 Issues = "https://github.com/vexyart/vexy-mkdocs-markdown-in-template/issues"

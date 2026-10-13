@@ -10,4 +10,4 @@ Bigger ideas beyond the v1.0.5 modernization pass. Nothing here blocks a release
       with a worked example on the docs site.
 - [ ] Add a Material-for-MkDocs integration test (the current test uses the null
       theme with a custom partial) to guard against theme-specific env quirks.
-- [ ] Publish the Jekyll docs to GitHub Pages via an Actions workflow.
+- [x] Publish the docs to GitHub Pages via an Actions workflow (ProperDocs site in `src_docs/`, `docs.yml`).

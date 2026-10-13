@@ -138,3 +138,9 @@ build/
 
 # hatch-vcs generated version file
 mkdocs_markdown_in_template_plugin/__version__.py
+
+# Tooling caches and agent state
+.omc/
+.ruff_cache/
+node_modules/
+site/

@@ -4,6 +4,8 @@
 [![PyPI](https://img.shields.io/pypi/v/vexy-mkdocs-markdown-in-template.svg)](https://pypi.org/project/vexy-mkdocs-markdown-in-template/)
 [![Python](https://img.shields.io/pypi/pyversions/vexy-mkdocs-markdown-in-template.svg)](https://pypi.org/project/vexy-mkdocs-markdown-in-template/)
 
+**Documentation:** https://vexy.dev/vexy-mkdocs-markdown-in-template/
+
 Write Markdown inside your MkDocs theme's Jinja2 templates.
 
 Theme partials are HTML; your content is Markdown. This plugin lets you write
@@ -57,7 +59,7 @@ mypy            # type check
 
 ## Documentation
 
-Full docs: <https://vexyart.github.io/vexy-mkdocs-markdown-in-template/>
+Full docs: <https://vexy.dev/vexy-mkdocs-markdown-in-template/>
 
 ## License
 

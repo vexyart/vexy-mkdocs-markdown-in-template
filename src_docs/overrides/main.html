@@ -1,0 +1,10 @@
+{#- this_file: src_docs/overrides/main.html -#}
+{#- Dog-food the plugin: the announcement bar below is Markdown inside a Jinja2 template. -#}
+{% extends "base.html" %}
+
+{% block announce %}
+  {% md %}
+  This bar is Markdown in `src_docs/overrides/main.html`, rendered by the
+  **markdown-in-template** plugin. [See how it is built]({{ base_url }}/examples/#announcement-bar-in-materialx).
+  {% mdend %}
+{% endblock %}

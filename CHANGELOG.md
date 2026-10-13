@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+- Documentation moved from Jekyll (`docs/index.md`, `docs/_config.yml`) to a
+  ProperDocs + MaterialX site: sources in `src_docs/md/` (11 pages), config in
+  `src_docs/mkdocs.yml`, built into `docs/` by `src_docs/build.sh` and published
+  at https://vexy.dev/vexy-mkdocs-markdown-in-template/. The site dog-foods the
+  plugin in `src_docs/overrides/main.html`.
+- `build.sh` now takes `all|docs|package`; `publish.sh` tags with `gitnextver`,
+  builds and uploads with `uv publish`.
+- `release.yml` publishes with `skip-existing: true`.
+
+### Added
+- `.github/workflows/docs.yml` rebuilds `docs/` on pushes to `main`.
+- `Documentation` URL in the package metadata.
+
 ## [1.0.5]
 
 ### Added
