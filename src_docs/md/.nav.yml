@@ -1,0 +1,14 @@
+# this_file: src_docs/md/.nav.yml
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Usage: usage.md
+  - Configuration: configuration.md
+  - Examples: examples.md
+  - How it works: architecture.md
+  - API reference: api.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+  - Topics: topics.md

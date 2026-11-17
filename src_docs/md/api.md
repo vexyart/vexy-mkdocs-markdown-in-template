@@ -1,3 +1,8 @@
+---
+this_file: src_docs/md/api.md
+tags: [API]
+---
+
 # API reference
 
 You do not call the plugin's Python API to use it; MkDocs does. This page is

@@ -49,18 +49,9 @@ markdown_extensions:
   - pymdownx.tabbed: {alternate_style: true}
   - pymdownx.tasklist: {custom_checkbox: true}
 plugins:
-  - search
+  - materialx/meta
+  - materialx/tags
+  - awesome-nav
+  - materialx/search
   # The plugin itself, installed from the repository root by build.sh (--with ..).
   - markdown-in-template
-nav:
-  - Home: index.md
-  - Installation: installation.md
-  - Quickstart: quickstart.md
-  - Usage: usage.md
-  - Configuration: configuration.md
-  - Examples: examples.md
-  - How it works: architecture.md
-  - API reference: api.md
-  - Troubleshooting: troubleshooting.md
-  - Contributing: contributing.md
-  - Changelog: changelog.md
